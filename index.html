@@ -56,7 +56,7 @@
         <section class="hero-bg-color">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="button order-batton" type="button" data-modal-open>Заказать услугу</button>
+                <button class="button order-button" type="button" data-modal-open>Заказать услугу</button>
                 <!--<button class="button order-batton" type="button"><a href="" class="backdrop-not-js">Заказать услугу</a></button>-->
             </div>
         </section>
@@ -64,7 +64,7 @@
         <!--Features -->
         <section class="section features">
             <div class="container">
-                <h2 class="section-title" hidden>Особенности</h2>
+                <h2 class="section-title  visuale-hidden">Особенности</h2>
                 <ul class="list">
                     <li class="item">
                         <h3 class="section-title title-features-details">Внимание к деталям</h3>
@@ -372,6 +372,18 @@
                     </li>
                 </ul>
             </div>
+            <div >
+                <h2 class="title-features-details title-bright">подпишитесь на рассылку</h2>
+                <form action="#" class="footer-form">
+                    <input class="form-field-footer" type="text" name="email" placeholder="E-mail">
+                    <button class="button order-button" type="submit">
+                        Подписаться
+                        <svg class="form-button-svg">
+                            <use href="./images/icons/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 
@@ -382,6 +394,45 @@
                     <use href="./images/icons/sprite.svg#icon-close"></use>
                 </svg>
             </button>
+            <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+            <form action="#" class="modal-form">
+                <label class="form-label">
+                    Имя
+                    <span class="modal-input-wrapper">
+                        <input class="form-field" type="text" name="user-name">
+                        <svg class="form-field-svg">
+                            <use href="./images/icons/sprite.svg#icon-target-modal"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="form-label">
+                    Телефон
+                    <span class="modal-input-wrapper">
+                        <input class="form-field" type="tel" name="user-tel">
+                        <svg class="form-field-svg">
+                            <use href="./images/icons/sprite.svg#icon-phone-modal"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="form-label">
+                    Почта
+                    <span class="modal-input-wrapper">
+                        <input class="form-field" type="email" name="user-mail">
+                        <svg class="form-field-svg">
+                            <use href="./images/icons/sprite.svg#icon-email-modal"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label  class="form-label">
+                    Комментарий
+                    <textarea class="form-field form-textarea" name="user-comment" placeholder="Введите текст"></textarea>
+                </label>
+                    <input class="form-contract-checkbox visuale-hidden" type="checkbox" value="accept-contract" name="accept" id="contract">
+                    <label class="form-contract-text" for="contract">
+                        Соглашаюсь с рассылкой и принимаю <a class="form-contract-link" href="#" target="_blank" rel="noopener noreferrer">Условия договора</a>
+                    </label>
+                <button class="button order-button" type="submit">Отправить</button>
+            </form>
         </div>
     </div>
 
