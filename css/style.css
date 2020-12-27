@@ -584,15 +584,16 @@ textarea {
 
 .section-footer {
   display: flex;
+  justify-content: space-between;
 }
 
-.address-footer {
+/*.address-footer {
   margin-right: 70px;
 }
 
 .social-footer {
   margin-right: 93px;
-}
+}*/
 
 .social-list.footer-social-list {
   margin: 20px 0 0 0;
