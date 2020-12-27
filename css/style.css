@@ -622,6 +622,7 @@ textarea {
 }
 
 .footer-form {
+  display: flex;
   margin-top: 20px;
 }
 
@@ -652,6 +653,7 @@ textarea {
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
+.form-field-footer:hover::placeholder,
 .form-field-footer:focus::placeholder {
   color: var(--accent-color-text);
 }
@@ -662,8 +664,6 @@ textarea {
   width: 24px;
   height: 24px;
   fill: var(--main-bg-color);
-  /*top: 50%;
-  /*transform: translateY(-50%);*/
 }
 
 /*Modal*/
@@ -788,11 +788,13 @@ textarea {
   border: 1px solid var(--accent-color-text);
 }
 
+.form-field:hover + .form-field-svg,
 .form-field:focus + .form-field-svg {
   fill: var(--accent-color-text);
 }
 
 .form-textarea {
+  display: block;
   padding: 12px 16px;
   height: 120px;
   margin-top: 4px;
@@ -808,6 +810,7 @@ textarea {
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
+.form-textarea:hover::placeholder,
 .form-textarea:focus::placeholder {
   color: var(--accent-color-text);
 }
@@ -818,13 +821,14 @@ textarea {
 }
 
 .form-contract-text {
+  display: flex;
+  align-items: center;
   margin: 10px auto 30px;
   font-size: 14px;
   line-height: 1.71;
 }
 
 .form-contract-text::before {
-  display: inline-block;
   content: "";
   margin-right: 7px;
   width: 16px;
@@ -842,29 +846,7 @@ textarea {
 }
 
 .form-contract-link {
-  /*font-size: 14px;
-  line-height: 1.71;*/
   color: var(--accent-color-text);
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
 }
-
-/*.form-label::after {
-  position: absolute;
-  display: inline-block;
-  content: "";
-  left: 12px;
-  bottom: 11px;
-
-  width: 18px;
-  height: 18px;
-  background-color: tomato;
-}
-
-.form-label:nth-child(1)::after {
-  background-color: greenyellow;
-}
-.form-label:nth-child(2)::after {
-  background-color: teal;
-}
-.form-label:nth-child(3)::after {
-  background-color: purple;
-}*/
